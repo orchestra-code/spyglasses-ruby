@@ -5,9 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.0.1] - 2025-06-23
 
-## [1.0.0] - 2024-01-XX
+### Changed
+- Updated documentation links in README to point to correct docs location (https://www.spyglasses.io/docs/platforms/ruby)
+- Updated gem author attribution to Orchestra AI, Inc.
+
+## [1.0.0] - 2025-06-23
 
 ### Added
 - Initial release of Spyglasses Ruby gem
@@ -37,5 +41,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Smart path exclusions for static assets
 - Minimal request overhead (<1ms typical)
 
-[Unreleased]: https://github.com/spyglasses/spyglasses-ruby/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/spyglasses/spyglasses-ruby/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/spyglasses/spyglasses-ruby/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/spyglasses/spyglasses-ruby/releases/tag/v1.0.0 

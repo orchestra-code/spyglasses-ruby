@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/spyglasses/spyglasses-ruby'
-  spec.metadata['documentation_uri'] = 'https://docs.spyglasses.io/ruby'
+  spec.metadata['documentation_uri'] = 'https://www.spyglasses.io/docs/platforms/ruby'
   spec.metadata['changelog_uri'] = 'https://github.com/spyglasses/spyglasses-ruby/blob/main/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.

@@ -331,5 +331,5 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Support
 
 - 📧 Email: support@spyglasses.io
-- 📖 Documentation: https://docs.spyglasses.io
+- 📖 Documentation: https://www.spyglasses.io/docs/platforms/ruby
 - 🐛 Issues: https://github.com/spyglasses/spyglasses-ruby/issues
