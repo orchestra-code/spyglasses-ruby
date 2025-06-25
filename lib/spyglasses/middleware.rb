@@ -137,13 +137,17 @@ module Spyglasses
     def log_request_async(detection_result, request, status, response_time)
       return unless @configuration.api_key_present?
 
+      # Ensure ip_address is never nil
+      client_ip = extract_client_ip(request) || '127.0.0.1'
+      
       request_info = {
         url: request.url,
         user_agent: request.user_agent || '',
-        ip_address: extract_client_ip(request),
+        ip_address: client_ip,
         request_method: request.request_method,
         request_path: request.path,
-        request_query: request.query_string.empty? ? nil : request.query_string,
+        # Ensure request_query is never nil - use empty string if no query
+        request_query: request.query_string || '',
         referrer: request.referrer,
         response_status: status,
         response_time_ms: (response_time * 1000).round,
@@ -157,13 +161,21 @@ module Spyglasses
 
     def extract_client_ip(request)
       # Try various headers to get the real client IP
-      [
+      ip = [
         request.env['HTTP_X_FORWARDED_FOR'],
         request.env['HTTP_X_REAL_IP'],
         request.env['HTTP_CF_CONNECTING_IP'], # Cloudflare
         request.env['HTTP_X_CLIENT_IP'],
         request.env['REMOTE_ADDR']
-      ].find { |ip| ip && !ip.empty? && ip != '127.0.0.1' } || request.ip
+      ].find { |ip| ip && !ip.empty? && ip != '127.0.0.1' }
+      
+      # If we found an IP in headers, handle comma-separated lists (X-Forwarded-For)
+      if ip && ip.include?(',')
+        ip = ip.split(',').first.strip
+      end
+      
+      # Return the found IP or fallback to request.ip
+      ip || request.ip
     end
 
     def extract_headers(request)

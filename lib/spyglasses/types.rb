@@ -187,17 +187,17 @@ module Spyglasses
         {
           url: @url,
           user_agent: @user_agent,
-          ip_address: @ip_address,
+          ip_address: @ip_address || '',
           request_method: @request_method,
           request_path: @request_path,
-          request_query: @request_query,
+          request_query: @request_query || '',
           request_body: @request_body,
           referrer: @referrer,
           response_status: @response_status,
           response_time_ms: @response_time_ms,
           headers: @headers,
           timestamp: @timestamp,
-          platform_type: @platform_type,
+          platformType: @platform_type,
           metadata: @metadata
         }
       end
