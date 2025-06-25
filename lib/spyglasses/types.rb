@@ -184,22 +184,30 @@ module Spyglasses
       end
 
       def to_h
-        {
+        payload = {
           url: @url,
           user_agent: @user_agent,
+          # Ensure required string fields are never nil - use empty string as default
           ip_address: @ip_address || '',
           request_method: @request_method,
           request_path: @request_path,
+          # request_query is required as string in API schema
           request_query: @request_query || '',
-          request_body: @request_body,
-          referrer: @referrer,
           response_status: @response_status,
           response_time_ms: @response_time_ms,
           headers: @headers,
           timestamp: @timestamp,
+          # Convert snake_case to camelCase to match TypeScript API
           platformType: @platform_type,
           metadata: @metadata
         }
+        
+        # Only include optional fields if they have values (not nil)
+        # This prevents sending null which fails TypeScript validation
+        payload[:request_body] = @request_body if @request_body
+        payload[:referrer] = @referrer if @referrer
+        
+        payload
       end
 
       def to_json(*args)
