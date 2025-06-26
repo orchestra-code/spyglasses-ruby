@@ -24,7 +24,7 @@ The gem is structured into several key components:
 ## Development Setup
 
 ```bash
-git clone https://github.com/spyglasses/spyglasses-ruby.git
+git clone https://github.com/orchestra-code/spyglasses-ruby.git
 cd spyglasses-ruby
 bin/setup
 ```

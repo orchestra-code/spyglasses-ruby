@@ -1,9 +1,9 @@
 # Spyglasses Ruby Gem
 
 [![Gem Version](https://badge.fury.io/rb/spyglasses.svg)](https://badge.fury.io/rb/spyglasses)
-[![Ruby](https://github.com/spyglasses/spyglasses-ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/spyglasses/spyglasses-ruby/actions/workflows/ruby.yml)
+[![Ruby](https://github.com/orchestra-code/spyglasses-ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/orchestra-code/spyglasses-ruby/actions/workflows/ruby.yml)
 
-AI Agent Detection and Management for Ruby web applications. Spyglasses provides comprehensive AI agent detection and management capabilities for Ruby web applications, including Rails, Sinatra, and other Rack-based frameworks.
+[AI SEO](https://www.spyglasses.io), AI Agent detection, AI model trainer blocking, and analytics for Ruby web applications. Spyglasses provides comprehensive AI agent detection and management capabilities for Ruby web applications, including Rails, Sinatra, and other Rack-based frameworks.
 
 ## Features
 
@@ -322,7 +322,7 @@ The Spyglasses middleware is designed for high-performance applications:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/spyglasses/spyglasses-ruby.
+Bug reports and pull requests are welcome on GitHub at https://github.com/orchestra-code/spyglasses-ruby.
 
 ## License
 
@@ -332,4 +332,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 - 📧 Email: support@spyglasses.io
 - 📖 Documentation: https://www.spyglasses.io/docs/platforms/ruby
-- 🐛 Issues: https://github.com/spyglasses/spyglasses-ruby/issues
+- 🐛 Issues: https://github.com/orchestra-code/spyglasses-ruby/issues

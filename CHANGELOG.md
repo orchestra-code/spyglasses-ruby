@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.2] - 2024-12-29
+## [1.1.3] - 2025-06-26
+
+### Fixed
+- Broken links to the github repo
+- Standardized README
+
+## [1.1.2] - 2025-06-25
 
 ### Fixed
 - Fixed optional field handling in JSON payload to prevent validation errors
@@ -13,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Resolves TypeScript API validation issues with null vs undefined distinction
 - Enhanced collector API compatibility for both bot and AI referrer events
 
-## [1.1.0] - 2024-12-29
+## [1.1.0] - 2025-06-25
 
 ### Fixed
 - **BREAKING**: Fixed API payload format to match TypeScript collector endpoint
@@ -28,7 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced middleware IP extraction with better fallback handling
 - Improved request query string handling to ensure non-nil values
 
-## [1.0.1] - 2024-12-28
+## [1.0.1] - 2025-06-24
 
 ### Added
 - Comprehensive Ruby documentation in main docs site
@@ -40,7 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documentation formatting and code examples
 - Installation instructions for various Ruby frameworks
 
-## [1.0.0] - 2024-12-28
+## [1.0.0] - 2025-06-24
 
 ### Added
 - Initial release of Spyglasses Ruby gem
@@ -63,8 +69,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Performance**: Pattern caching, background logging, minimal overhead
 - **Framework Support**: Universal Rack middleware design
 
-[Unreleased]: https://github.com/spyglasses/spyglasses-ruby/compare/v1.1.2...HEAD
-[1.1.2]: https://github.com/spyglasses/spyglasses-ruby/compare/v1.1.0...v1.1.2
-[1.1.0]: https://github.com/spyglasses/spyglasses-ruby/compare/v1.0.1...v1.1.0
-[1.0.1]: https://github.com/spyglasses/spyglasses-ruby/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/spyglasses/spyglasses-ruby/releases/tag/v1.0.0 
+[Unreleased]: https://github.com/orchestra-code/spyglasses-ruby/compare/v1.1.2...HEAD
+[1.1.3]: https://github.com/orchestra-code/spyglasses-ruby/compare/v1.1.0...v1.1.3
+[1.1.2]: https://github.com/orchestra-code/spyglasses-ruby/compare/v1.1.0...v1.1.2
+[1.1.0]: https://github.com/orchestra-code/spyglasses-ruby/compare/v1.0.1...v1.1.0
+[1.0.1]: https://github.com/orchestra-code/spyglasses-ruby/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/orchestra-code/spyglasses-ruby/releases/tag/v1.0.0 
